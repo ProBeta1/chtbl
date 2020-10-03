@@ -3,14 +3,12 @@ import { FlatList, Keyboard, Text, TextInput, TouchableOpacity, View } from 'rea
 import styles from './styles';
 import { firebase } from '../../firebase/config'
 
-export default function HomeScreen(props) {
-
+const Groups = () => {
     return (
-        <View style={styles.container}>
-            <Text>
-                Home yes!
-            </Text>
-
+        <View>
+            <Text>Groups</Text>
         </View>
     )
 }
+
+export default Groups;

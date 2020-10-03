@@ -3,14 +3,12 @@ import { FlatList, Keyboard, Text, TextInput, TouchableOpacity, View } from 'rea
 import styles from './styles';
 import { firebase } from '../../firebase/config'
 
-export default function HomeScreen(props) {
-
+const Notification = () => {
     return (
-        <View style={styles.container}>
-            <Text>
-                Home yes!
-            </Text>
-
+        <View>
+            <Text>Notification dude</Text>
         </View>
     )
 }
+
+export default Notification;
