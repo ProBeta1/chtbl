@@ -6,6 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { LoginScreen, HomeScreen, RegistrationScreen } from './src/screens'
 import { decode, encode } from 'base-64'
 import Navigator from './src/screens/Navigator'
+import { GiftedChat } from 'react-native-gifted-chat';
+import Onboarding from './src/screens/Onboarding/Onboarding';
 if (!global.btoa) { global.btoa = encode }
 if (!global.atob) { global.atob = decode }
 
@@ -47,7 +49,12 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator headerMode="none">
         {user ? (
+          <>
           <Stack.Screen name="Nav" component={Navigator} />
+          <Stack.Screen name="Chat" component={GiftedChat}/>
+          <Stack.Screen name="Onboarding" component={Onboarding}/>
+          </>
+          
         ) : (
             <>
               <Stack.Screen name="Login" component={LoginScreen} />

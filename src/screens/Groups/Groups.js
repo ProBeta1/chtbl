@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { FlatList, Keyboard, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { FlatList, Keyboard, Text, TextInput, TouchableOpacity, View, Button } from 'react-native'
 import { firebase } from '../../firebase/config'
 import styles from './styles';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 
-const Groups = () => {
+const Groups = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text style={{
@@ -21,6 +23,10 @@ const Groups = () => {
 
             <Text>Watch the introductory video</Text>
 
+            <Button
+                onPress={() => navigation.navigate("Chat")}
+                title="Join Group Chat"
+            />
         </View>
     )
 }

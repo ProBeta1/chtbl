@@ -8,6 +8,7 @@ import Groups from './Groups/Groups';
 import Notification from './Notification/Notification';
 import Diary from './Diary/Diary';
 import Settings from './Settings/Settings';
+import Onboarding from './Onboarding/Onboarding';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,6 +23,17 @@ const YoTabs = () => {
                 inactiveBackgroundColor: '#F2FAFD'
             }}
         >
+            <Tab.Screen
+                name="Onboarding"
+                component={Onboarding}
+                options={{
+                    tabBarLabel: 'Onboarding',
+                    tabBarIcon: ({ color, size }) => (
+                        <MaterialCommunityIcons name="home" color={color} size={size} />
+                    ),
+                }}
+            />
+
             <Tab.Screen
                 name="HomeScreen"
                 component={HomeScreen}

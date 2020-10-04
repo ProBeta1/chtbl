@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react'
+import { View } from 'react-native';
 import { GiftedChat } from 'react-native-gifted-chat'
 
 export function Example() {
@@ -21,15 +22,19 @@ export function Example() {
 
   const onSend = useCallback((messages = []) => {
     setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
+    console.log(messages)
   }, [])
 
   return (
-    <GiftedChat
-      messages={messages}
-      onSend={messages => onSend(messages)}
-      user={{
-        _id: 1,
-      }}
-    />
+    <View>
+      <Text>hi</Text>
+      <GiftedChat
+        messages={messages}
+        onSend={messages => onSend(messages)}
+        user={{
+          _id: 1,
+        }}
+      />
+    </View>
   )
 }
