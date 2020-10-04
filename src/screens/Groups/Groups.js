@@ -17,7 +17,7 @@ const Groups = ({ navigation }) => {
                 lineHeight: '17px'
             }}>The focus this week is </Text>
 
-            <View sty>
+            <View>
                 <Text>Hiring bias</Text>
             </View>
 
