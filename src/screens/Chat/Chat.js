@@ -1,8 +1,9 @@
 import React, { useState, useCallback, useEffect } from 'react'
+import { StyleSheet } from 'react-native';
 import { View } from 'react-native';
 import { GiftedChat } from 'react-native-gifted-chat'
 
-export function Example() {
+export function Chat() {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
@@ -27,7 +28,7 @@ export function Example() {
 
   return (
     <View>
-      <Text>hi</Text>
+      <Text>hiuhsgfhdhfh</Text>
       <GiftedChat
         messages={messages}
         onSend={messages => onSend(messages)}
@@ -38,3 +39,7 @@ export function Example() {
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+
+})

@@ -55,6 +55,21 @@ export default function RegistrationScreen({ navigation }) {
                     style={styles.logo}
                     source={require('../../../assets/icon.png')}
                 />
+
+                <View style={styles.btns}>
+                    <TouchableOpacity
+                        style={styles.lbutton}
+                        onPress={() => onFooterLinkPress()}
+                    >
+                        <Text style={styles.buttonTitle}>Login</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        style={styles.rbutton}
+                    >
+                        <Text style={styles.buttonTitle}>SignUp</Text>
+                    </TouchableOpacity>
+                </View>
+
                 <TextInput
                     style={styles.input}
                     placeholder='Full Name'
@@ -96,11 +111,8 @@ export default function RegistrationScreen({ navigation }) {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => onRegisterPress()}>
-                    <Text style={styles.buttonTitle}>Create account</Text>
+                    <Text style={styles.buttonTitle}>Submit</Text>
                 </TouchableOpacity>
-                <View style={styles.footerView}>
-                    <Text style={styles.footerText}>Already got an account? <Text onPress={onFooterLinkPress} style={styles.footerLink}>Log in</Text></Text>
-                </View>
             </KeyboardAwareScrollView>
         </View>
     )

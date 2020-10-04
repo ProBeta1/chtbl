@@ -8,6 +8,7 @@ import { decode, encode } from 'base-64'
 import Navigator from './src/screens/Navigator'
 import { GiftedChat } from 'react-native-gifted-chat';
 import Onboarding from './src/screens/Onboarding/Onboarding';
+import { Chat } from './src/screens/Chat/Chat';
 if (!global.btoa) { global.btoa = encode }
 if (!global.atob) { global.atob = decode }
 
@@ -50,11 +51,11 @@ export default function App() {
       <Stack.Navigator headerMode="none">
         {user ? (
           <>
-          <Stack.Screen name="Nav" component={Navigator} />
-          <Stack.Screen name="Chat" component={GiftedChat}/>
-          <Stack.Screen name="Onboarding" component={Onboarding}/>
+            <Stack.Screen name="Nav" component={Navigator} />
+            <Stack.Screen name="Chat" component={Chat} />
+            <Stack.Screen name="Onboarding" component={Onboarding} />
           </>
-          
+
         ) : (
             <>
               <Stack.Screen name="Login" component={LoginScreen} />

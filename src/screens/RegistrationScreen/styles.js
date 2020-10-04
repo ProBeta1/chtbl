@@ -3,23 +3,50 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center'
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 50,
+        padding: 20,
+        backgroundColor: 'white'
     },
-    title: {
+    btns: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        margin: 10
+    },
+    lbutton: {
+        backgroundColor: '#B0E0E6',
+        marginLeft: 15,
+        marginTop: 20,
+        height: 42,
+        padding: 10,
+        alignItems: "center",
+        justifyContent: 'center'
+    },
+
+    rbutton: {
+        backgroundColor: '#00ABE3',
+        marginRight: 15,
+        marginTop: 20,
+        height: 42,
+        padding: 10,
+        alignItems: "center",
+        justifyContent: 'center',
 
     },
     logo: {
         flex: 1,
-        height: 120,
-        width: 90,
+        height: 200,
+        width: 200,
         alignSelf: "center",
         margin: 30
     },
     input: {
-        height: 48,
+        height: 42,
         borderRadius: 5,
         overflow: 'hidden',
-        backgroundColor: 'white',
+        backgroundColor: '#E2E2E2',
         marginTop: 10,
         marginBottom: 10,
         marginLeft: 30,
@@ -27,12 +54,12 @@ export default StyleSheet.create({
         paddingLeft: 16
     },
     button: {
-        backgroundColor: '#788eec',
-        marginLeft: 30,
-        marginRight: 30,
+        backgroundColor: '#00ABE3',
+        marginLeft: 40,
+        marginRight: 40,
         marginTop: 20,
-        height: 48,
-        borderRadius: 5,
+        height: 44,
+        borderRadius: 20,
         alignItems: "center",
         justifyContent: 'center'
     },
