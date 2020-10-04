@@ -16,6 +16,10 @@ const Onboarding = () => {
         <Item img={item.img} title={item.title} content={item.content} />
     );
 
+    const onSubmitPress = () => {
+        
+    }
+
     return (
         <View style={styles.container}>
             <Text style={styles.header}>Personal Details</Text>
@@ -70,7 +74,7 @@ const Onboarding = () => {
             />
             <TouchableOpacity
                 style={styles.button}
-                onPress={() => onLoginPress()}>
+                onPress={() => onSubmitPress()}>
                 <Text style={styles.buttonTitle}>Log in</Text>
             </TouchableOpacity>
             {/* <FlatList
