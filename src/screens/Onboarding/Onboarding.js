@@ -17,7 +17,7 @@ const Onboarding = () => {
     );
 
     const onSubmitPress = () => {
-        
+
     }
 
     return (
@@ -27,9 +27,9 @@ const Onboarding = () => {
             <Text style={styles.text}>Your personal information is hidden from other users</Text>
 
             <View style={styles.row}>
-                <View style={{ background: 'rgba(0, 171, 227, 0.5)', width: '30px', height: '30px', justifyContent: 'center', padding: '10px' }}><Button style={{ color: 'none', border: 'none' }} title="M" /></View>
-                <View style={{ background: 'rgba(0, 171, 227, 0.5)', width: '30px', height: '30px', justifyContent: 'center', padding: '10px' }}><Text>F</Text></View>
-                <View style={{ background: 'rgba(0, 171, 227, 0.5)', width: '123px', height: '30px', justifyContent: 'center', padding: '10px' }}><Text>Non-binary</Text></View>
+                {/* <View style={{ background: 'rgba(0, 171, 227, 0.5)', width: 30, height: 30, justifyContent: 'center', padding: 10 }}><Button style={{ color: 'none', border: 'none' }} title="M" /></View>
+                <View style={{ background: 'rgba(0, 171, 227, 0.5)', width: 30, height: 30, justifyContent: 'center', padding: 10 }}><Text>F</Text></View>
+                <View style={{ background: 'rgba(0, 171, 227, 0.5)', width: 123, height: 30, justifyContent: 'center', padding: 10 }}><Text>Non-binary</Text></View> */}
             </View>
 
             <TextInput

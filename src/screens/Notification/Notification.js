@@ -7,15 +7,15 @@ const Notification = () => {
     return (
         <View style={styles.container}>
             <Text style={{
-                fontFamily: 'Montserrat',
+                // fontFamily: 'Montserrat',
                 fontStyle: 'normal',
                 fontWeight: '600',
-                fontSize: '18px',
-                lineWeight: '22px'
+                fontSize: 18,
+                lineWeight: 22
             }}>
                 Notificaitons
             </Text>
-            <Text style={{paddingTop: '180px'}}>You have no notifications</Text>
+            <Text style={{ paddingTop: 180 }}>You have no notifications</Text>
         </View>
     )
 }

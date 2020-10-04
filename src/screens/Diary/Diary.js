@@ -27,11 +27,11 @@ const Diary = () => {
             <View style={styles.container}>
                 <View style={styles.row}>
                     <Text style={{
-                        fontFamily: 'Montserrat',
+                        // fontFamily: 'Montserrat',
                         fontStyle: 'normal',
                         fontWeight: '600',
-                        fontSize: '18px',
-                        lineWeight: '22px'
+                        fontSize: 18,
+                        lineWeight: 22
                     }}>
                         Diary
                 </Text>
@@ -83,7 +83,7 @@ const Diary = () => {
 
 
 
-                <Text style={{ paddingTop: '180px' }}>You have no diaries</Text>
+                <Text style={{ paddingTop: 180 }}>You have no diaries</Text>
             </View>
         </View>
     )

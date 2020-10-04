@@ -29,7 +29,7 @@ const YoTabs = () => {
                 options={{
                     tabBarLabel: 'Onboarding',
                     tabBarIcon: ({ color, size }) => (
-                        <MaterialCommunityIcons name="home" color={color} size={size} />
+                        <MaterialCommunityIcons name="face-profile" color={color} size={size} />
                     ),
                 }}
             />

@@ -8,6 +8,7 @@ import Img2 from "./images/img2.png"
 import { Image } from 'react-native'
 import user from '../../pics/user.png';
 import { WebView } from 'react-native';
+import YouTube from 'react-native-youtube';
 
 
 export default function HomeScreen(props) {
@@ -23,12 +24,12 @@ export default function HomeScreen(props) {
                 value={searchQuery}
             />
             <Text style={{
-                fontFamily: 'Montserrat',
+                // fontFamily: 'Montserrat',
                 fontStyle: 'normal',
                 fontWeight: '600',
-                fontSize: '18px',
-                lineHeight: '22px',
-                margin: '30px'
+                fontSize: 18,
+                lineHeight: 22,
+                margin: 30
             }}>
                 Recommended videos
                 Very confused why the image imports below aren't working
@@ -50,10 +51,10 @@ export default function HomeScreen(props) {
                 play // control playback of video with true/false
                 fullscreen // control whether the video should play in fullscreen or inline
                 loop // control whether the video should loop when ended
-                onReady={e => this.setState({ isReady: true })}
-                onChangeState={e => this.setState({ status: e.state })}
-                onChangeQuality={e => this.setState({ quality: e.quality })}
-                onError={e => this.setState({ error: e.error })}
+                // onReady={e => this.setState({ isReady: true })}
+                // onChangeState={e => this.setState({ status: e.state })}
+                // onChangeQuality={e => this.setState({ quality: e.quality })}
+                // onError={e => this.setState({ error: e.error })}
                 style={{ alignSelf: 'stretch', height: 300 }}
             /> */}
 

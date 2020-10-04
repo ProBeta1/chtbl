@@ -4,7 +4,7 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        margin: '30px'
+        margin: 30
     },
     formContainer: {
         flexDirection: 'row',
@@ -29,12 +29,13 @@ export default StyleSheet.create({
         marginRight: 5
     },
     button: {
-        height: 47,
-        borderRadius: 5,
-        backgroundColor: '#788eec',
-        width: 80,
-        alignItems: "center",
-        justifyContent: 'center'
+        borderRadius: 10,
+        backgroundColor: '#00ABE3',
+        margin: 10,
+        paddingLeft: 30,
+        paddingRight: 30,
+        paddingTop: 5,
+        paddingBottom: 5
     },
     buttonText: {
         color: 'white',
@@ -53,5 +54,41 @@ export default StyleSheet.create({
     entityText: {
         fontSize: 20,
         color: '#333333'
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: '800',
+        marginBottom: 10
+    },
+    gtext: {
+        color: '#8E8E8E',
+        fontSize: 16
+    },
+    head: {
+        backgroundColor: '#5B479C',
+        margin: 10,
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingTop: 5,
+        paddingBottom: 5
+    },
+    wtext: {
+        color: '#FFFFFF',
+        fontWeight: 'bold',
+        fontSize: 18
+    },
+    intro: {
+        fontWeight: 'bold',
+        letterSpacing: 1.1,
+        fontSize: 16,
+        marginTop: 10
+    },
+    img: {
+        width: 300,
+        height: 200
+    },
+    btext: {
+        textAlign: 'center',
+        margin: 10
     }
 })

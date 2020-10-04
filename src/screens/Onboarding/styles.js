@@ -4,31 +4,31 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        margin: '30px'
+        margin: 30
     },
     header: {
-        width: '148px',
-        height: '22px',
-        top: '86px',
-        
-        fontFamily: 'Montserrat',
+        width: 148,
+        height: 22,
+        top: 86,
+
+        // fontFamily: 'Montserrat',
         fontStyle: 'normal',
         fontWeight: '600',
-        fontSize: '18px',
-        lineHeight: '22px'
-    }, 
+        fontSize: 18,
+        lineHeight: 22
+    },
     text: {
-        height: '34px',
-        left: '24px',
-        right: '24px',
-        
-        fontFamily: 'Montserrat',
+        height: 34,
+        left: 24,
+        right: 24,
+
+        // fontFamily: 'Montserrat',
         fontStyle: 'normal',
         fontWeight: '500',
-        fontSize: '14px',
-        lineHeight: '17px',
+        fontSize: 14,
+        lineHeight: 17,
         textAlign: 'center',
-        
+
         color: '#8E8E8E'
     },
     input: {
@@ -47,7 +47,7 @@ export default StyleSheet.create({
         flexDirection: 'row'
     },
     options: {
-        background: 'rgba(0, 171, 227, 0.5)'
+        backgroundColor: 'rgba(0, 171, 227, 0.5)'
     },
     formContainer: {
         flexDirection: 'row',
