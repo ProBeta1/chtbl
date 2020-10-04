@@ -5,8 +5,17 @@ import { firebase } from '../../firebase/config'
 
 const Notification = () => {
     return (
-        <View>
-            <Text>Notification dude</Text>
+        <View style={styles.container}>
+            <Text style={{
+                fontFamily: 'Montserrat',
+                fontStyle: 'normal',
+                fontWeight: '600',
+                fontSize: '18px',
+                lineWeight: '22px'
+            }}>
+                Notificaitons
+            </Text>
+            <Text style={{paddingTop: '180px'}}>You have no notifications</Text>
         </View>
     )
 }
