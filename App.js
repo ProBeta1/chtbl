@@ -11,6 +11,8 @@ import Onboarding from './src/screens/Onboarding/Onboarding';
 import { Chat } from './src/screens/Chat/Chat';
 if (!global.btoa) { global.btoa = encode }
 if (!global.atob) { global.atob = decode }
+import { YellowBox } from 'react-native';
+YellowBox.ignoreWarnings(['Remote debugger']);
 
 const Stack = createStackNavigator();
 

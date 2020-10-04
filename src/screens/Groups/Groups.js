@@ -24,8 +24,8 @@ const Groups = ({ navigation }) => {
 
             <Image source={{ uri: "https://jsginc.com/wp-content/uploads/2019/08/bigstock-Smiling-Young-Man-Shaking-Hand-254970049.jpg" }} style={styles.img} />
 
-            <Text>Unconscious bias in recruitment</Text>
-            <Text style={styles.btext}>Humans are naturally motivated to categorize people and objects.</Text>
+            <Text style={styles.btext}>Unconscious bias in recruitment</Text>
+            <Text style={styles.btext}>Humans are naturally motivated to categorize people and objects. This is normal cognitive behavior. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </Text>
 
             <TouchableOpacity
                 style={styles.button}

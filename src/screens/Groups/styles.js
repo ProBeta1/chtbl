@@ -35,7 +35,7 @@ export default StyleSheet.create({
         paddingLeft: 30,
         paddingRight: 30,
         paddingTop: 5,
-        paddingBottom: 5
+        paddingBottom: 5,
     },
     buttonText: {
         color: 'white',
@@ -58,7 +58,7 @@ export default StyleSheet.create({
     title: {
         fontSize: 24,
         fontWeight: '800',
-        marginBottom: 10
+        marginBottom: 10,
     },
     gtext: {
         color: '#8E8E8E',
@@ -79,9 +79,9 @@ export default StyleSheet.create({
     },
     intro: {
         fontWeight: 'bold',
-        letterSpacing: 1.1,
         fontSize: 16,
-        marginTop: 10
+        marginTop: 10,
+        marginBottom: 20,
     },
     img: {
         width: 300,
