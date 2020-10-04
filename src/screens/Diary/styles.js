@@ -29,12 +29,13 @@ export default StyleSheet.create({
         marginRight: 5
     },
     button: {
-        height: 47,
+        height: 20,
         borderRadius: 5,
         backgroundColor: '#788eec',
-        width: 80,
+        width: 65,
         alignItems: "center",
-        justifyContent: 'center'
+        justifyContent: 'center',
+        right: 0
     },
     buttonText: {
         color: 'white',
@@ -53,5 +54,9 @@ export default StyleSheet.create({
     entityText: {
         fontSize: 20,
         color: '#333333'
+    },
+    row: {
+        display: 'flex',
+        flexDirection: 'row'
     }
 })
